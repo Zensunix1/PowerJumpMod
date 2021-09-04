@@ -13,7 +13,7 @@ using UnityEngine.Rendering;
 
 namespace RunnerMonke
 {
-    [BepInPlugin("org.ZixedTheMonkeyGuy.monkeytag.RunnerMonke", "RunnerMonke", "1.00")]
+    [BepInPlugin("org.ZixedTheMonkeyGuy.monkeytag.RunnerMonke", "RunnerMonke", "1.01")]
     public class MyPatcher : BaseUnityPlugin
     {
         public void Awake()
