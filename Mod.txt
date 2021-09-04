@@ -31,13 +31,13 @@ namespace RunnerMonke
         static bool Run = false;
         static void PostFix(GorillaLocomotion.Player __instance)
         {
-            if(!PhotonNetwork.CurrentRoom.IsVisible || !PhotonNetwork.InRoom)
+            if (!PhotonNetwork.CurrentRoom.IsVisible || !PhotonNetwork.InRoom)
             {
                 List<InputDevice> list = new List<InputDevice>();
                 InputDevices.GetDevicesWithCharacteristics(UnityEngine.XR.InputDeviceCharacteristics.HeldInHand | UnityEngine.XR.InputDeviceCharacteristics.Right | UnityEngine.XR.InputDeviceCharacteristics.Controller, list);
                 list[0].TryGetFeatureValue(CommonUsages.gripButton, out Run);
 
-                if(Run)
+                if (Run)
                 {
                     __instance.jumpMultiplier = 10f;
                     __instance.maxJumpSpeed = 10f;
@@ -50,4 +50,5 @@ namespace RunnerMonke
             }
         }
     }
+    else
 }
